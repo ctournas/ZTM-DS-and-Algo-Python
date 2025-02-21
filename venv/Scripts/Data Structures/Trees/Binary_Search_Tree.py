@@ -89,7 +89,7 @@ class BST():
             else: #Match is found. Different cases to be checked
                 #Node has left child only
                 if current_node.right == None:
-                    if parent_node == None:
+                    if parent_node == None: # This means that data == self.root
                         self.root = current_node.left
                         return
                     else:
