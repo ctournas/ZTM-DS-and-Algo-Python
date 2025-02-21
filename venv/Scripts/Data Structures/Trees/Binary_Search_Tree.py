@@ -135,6 +135,7 @@ class BST():
                     current_node.data = del_node.data #The value to be replaced is copied
                     if del_node == del_node_parent: #If the node to be deleted is the exact right child of the current node
                         current_node.right = del_node.right
+                        current_node.data = del_node.data
                         return
                     if del_node.right == None: #If the leftmost node of the right subtree of the current node has no right subtree
                         del_node_parent.left = None
